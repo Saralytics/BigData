@@ -1,0 +1,7 @@
+package salary;
+
+import org.apache.hadoop.mapreduce.Reducer;
+
+public class SalaryReducer extends Reducer{
+
+}

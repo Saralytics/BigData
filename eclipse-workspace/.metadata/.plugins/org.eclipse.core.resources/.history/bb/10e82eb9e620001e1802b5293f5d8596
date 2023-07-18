@@ -1,0 +1,37 @@
+package wordcount;
+
+import java.io.IOException;
+
+import org.apache.hadoop.conf.Configuration;
+import org.apache.hadoop.mapreduce.Job;
+import org.apache.hadoop.io.IntWritable;
+import org.apache.hadoop.io.Text;
+
+public class WordcountMain {
+	// This is more or less a template. All Mapreduce main programs follow this structure. 
+
+	public static void main(String[] args) throws Exception {
+		// 1. create a job, and specify entrypoint
+		
+		Job job = Job.getInstance(new Configuration());
+		job.setJarByClass(WordcountMain.class);
+		
+		// 2. Specify Map and Map output type 
+		job.setMapperClass(WordCountMapper.class);
+		job.setMapOutputKeyClass(Text.class); // k2
+		job.setMapOutputValueClass(IntWritable.class); //v2
+		
+		// 3. Specify Reduce and Reduce output type 
+		
+		job.setReducerClass(WordCountReducer.class);
+		job.setOutputKeyClass(Text.class);
+		job.setOut
+		
+		// 4. Specify Job input and output paths 
+		
+		
+		// 5. Run job
+
+	}
+
+}

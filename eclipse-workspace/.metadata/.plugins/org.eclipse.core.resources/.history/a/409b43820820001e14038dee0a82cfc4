@@ -1,0 +1,11 @@
+package hdfsdemo;
+
+import org.junit.Test;
+
+public class DemoDownload {
+	
+	@Test
+	public void test1(){
+		
+	}
+}

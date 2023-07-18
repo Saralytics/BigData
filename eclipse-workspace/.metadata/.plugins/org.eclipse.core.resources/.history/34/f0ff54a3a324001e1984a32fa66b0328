@@ -1,0 +1,9 @@
+package demo.distinct;
+
+import org.apache.hadoop.io.IntWritable;
+import org.apache.hadoop.io.NullWritable;
+import org.apache.hadoop.mapreduce.Reducer;
+
+public class DistinctReducer extends Reducer<IntWritable, NullWritable, IntWritable, NullWritable> {
+
+}

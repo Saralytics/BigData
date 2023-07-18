@@ -1,0 +1,33 @@
+package salarySerialization;
+
+import java.io.IOException;
+
+import org.apache.hadoop.io.IntWritable;
+import org.apache.hadoop.io.LongWritable;
+import org.apache.hadoop.io.Text;
+import org.apache.hadoop.mapreduce.Mapper;
+
+import ser.hadoop.Employee;
+
+// 													  k1            v1    departmentNo  employee object	
+
+public class SalaryMapperSerialization extends Mapper<LongWritable, Text, IntWritable, Employee> {
+
+	@Override
+	protected void map(LongWritable k1, Text v1, Context context)
+			throws IOException, InterruptedException {
+		// split text here 
+		String data = v1.toString();
+		String[] fields = data.split(",");
+		
+		Employee e = new Employee();
+		e.setDeptno(Integer.parseInt(fields[7]));
+		e.setSalary(Integer.parseInt(fields[5]));
+		
+		context.write(new IntWritable(e.getDeptno()), e);
+		
+		
+	}
+	
+
+}

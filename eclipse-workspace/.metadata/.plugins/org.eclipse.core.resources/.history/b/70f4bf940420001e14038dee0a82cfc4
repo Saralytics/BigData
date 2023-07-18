@@ -1,0 +1,14 @@
+package hdfsdemo;
+
+import org.junit.Test;
+
+public class DemoMkdir {
+	
+	@Test
+	public void test1() throws Exception{
+		
+		
+		
+	}
+
+}

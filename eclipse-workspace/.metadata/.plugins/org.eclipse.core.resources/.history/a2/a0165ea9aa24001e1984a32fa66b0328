@@ -1,0 +1,5 @@
+package demo.equaljoin;
+
+public class EqualJoinReducer {
+
+}

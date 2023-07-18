@@ -1,0 +1,10 @@
+package wordcount;
+
+public class WordcountMain {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
