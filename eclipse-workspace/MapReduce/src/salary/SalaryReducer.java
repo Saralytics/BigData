@@ -18,5 +18,5 @@ public class SalaryReducer extends Reducer<IntWritable, IntWritable, IntWritable
 		context.write(k3, new IntWritable(total));
 	}
 	
-
 }
+
