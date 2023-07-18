@@ -1,7 +1,0 @@
-package demo.equaljoin;
-
-import org.apache.hadoop.mapreduce.Mapper;
-
-public class EqualJoinMapper extends Mapper<KEYIN, VALUEIN, KEYOUT, VALUEOUT> {
-
-}

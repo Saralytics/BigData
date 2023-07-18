@@ -1,7 +1,0 @@
-package demo.equaljoin;
-
-import org.apache.hadoop.mapreduce.Reducer;
-
-public class EqualJoinReducer extends Reducer<KEYIN, VALUEIN, KEYOUT, VALUEOUT> {
-
-}

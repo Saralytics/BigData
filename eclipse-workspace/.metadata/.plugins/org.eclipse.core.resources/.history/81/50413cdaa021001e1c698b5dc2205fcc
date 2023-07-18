@@ -1,8 +1,0 @@
-package salary;
-
-import org.apache.hadoop.mapreduce.Mapper;
-
-public class SalaryMapper extends Mapper<keyin, valuein, keyout, valueout> {
-	
-
-}

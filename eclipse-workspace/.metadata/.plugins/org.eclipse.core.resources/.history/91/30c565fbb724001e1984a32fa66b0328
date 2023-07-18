@@ -1,7 +1,0 @@
-package demo.selfjoin;
-
-import org.apache.hadoop.mapreduce.Reducer;
-
-public class SelfJoinReducer extends Reducer<KEYIN, VALUEIN, KEYOUT, VALUEOUT> {
-
-}

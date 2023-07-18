@@ -1,5 +1,0 @@
-package ser.hadoop;
-
-public class EmployeeMapper {
-
-}
