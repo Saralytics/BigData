@@ -18,7 +18,7 @@ public class MRUniteWordCount {
 		WordCountMapper mapper = new WordCountMapper();
 		
 		// create a driver for unit test
-		MapDriver<LongWritable, Text, Text, IntWritable>  driver = new MapDriver(mapper);
+		MapDriver<LongWritable, Text, Text, IntWritable>  driver = new MapDriver<LongWritable, Text, Text, IntWritable>(mapper);
 		
 		// Specify the map input 
 		driver.withInput(new LongWritable(1), new Text("I love Beijing"));
@@ -40,7 +40,7 @@ public class MRUniteWordCount {
 		
 		// create a driver for test
 		ReduceDriver<Text, IntWritable,Text, IntWritable> 
-			driver = new ReduceDriver(reducer);
+			driver = new ReduceDriver<Text, IntWritable, Text, IntWritable>(reducer);
 		
 		// create the input 
 		List<IntWritable> v3 = new ArrayList<IntWritable>();
@@ -65,7 +65,7 @@ public class MRUniteWordCount {
 		
 		// create driver 
 		MapReduceDriver<LongWritable, Text, Text, IntWritable, Text, IntWritable> 
-			driver = new MapReduceDriver(mapper, reducer);
+			driver = new MapReduceDriver<LongWritable, Text, Text, IntWritable, Text, IntWritable>(mapper, reducer);
 		
 		// create input 
 		driver.withInput(new LongWritable(1),new Text("I love Beijing"))

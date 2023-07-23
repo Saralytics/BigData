@@ -13,7 +13,6 @@
     <fullyQualifiedTypeName name="org.apache.hadoop.mapreduce.lib.input.FileInputFormat"/>
     <fullyQualifiedTypeName name="org.apache.hadoop.mapreduce.lib.output.FileOutputFormat"/>
     <fullyQualifiedTypeName name="org.apache.hadoop.mapreduce.Job"/>
-    <fullyQualifiedTypeName name="org.apache.hadoop.conf.Configuration"/>
     <fullyQualifiedTypeName name="java.io.FileOutputStream"/>
     <fullyQualifiedTypeName name="java.io.ObjectOutputStream"/>
     <fullyQualifiedTypeName name="java.io.Serializable"/>
@@ -26,9 +25,18 @@
     <fullyQualifiedTypeName name="org.apache.hadoop.mapreduce.Mapper"/>
     <fullyQualifiedTypeName name="org.apache.hadoop.mapred.FileSplit"/>
     <fullyQualifiedTypeName name="org.apache.hadoop.mapreduce.lib.input.FileSplit"/>
-    <fullyQualifiedTypeName name="org.junit.Test"/>
     <fullyQualifiedTypeName name="org.apache.hadoop.mrunit.mapreduce.MapDriver"/>
     <fullyQualifiedTypeName name="org.apache.hadoop.io.LongWritable"/>
     <fullyQualifiedTypeName name="org.apache.hadoop.io.Text"/>
     <fullyQualifiedTypeName name="org.apache.hadoop.io.IntWritable"/>
+    <fullyQualifiedTypeName name="org.junit.Test"/>
+    <fullyQualifiedTypeName name="org.apache.hadoop.conf.Configuration"/>
+    <fullyQualifiedTypeName name="org.apache.hadoop.hbase.TableName"/>
+    <fullyQualifiedTypeName name="org.apache.hadoop.hbase.HTableDescriptor"/>
+    <fullyQualifiedTypeName name="org.apache.hadoop.hbase.HColumnDescriptor"/>
+    <fullyQualifiedTypeName name="org.apache.hadoop.hbase.client.Put"/>
+    <fullyQualifiedTypeName name="org.apache.hadoop.hbase.util.Bytes"/>
+    <fullyQualifiedTypeName name="org.apache.hadoop.hbase.client.HTable"/>
+    <fullyQualifiedTypeName name="org.apache.hadoop.hbase.client.Get"/>
+    <fullyQualifiedTypeName name="org.apache.hadoop.hbase.client.Result"/>
 </qualifiedTypeNameHistroy>
