@@ -16,14 +16,14 @@ import org.junit.Test;
 public class DataInit {
 	@Test
 	public void testCreateTable() throws Exception{
-		//÷∏∂®µƒ≈‰÷√–≈œ¢: ZooKeeper
+		//ZooKeeper
 		Configuration conf = new Configuration();
 		conf.set("hbase.zookeeper.quorum", "192.168.143.112");
 		
 		//¥¥Ω®“ª∏ˆHBaseøÕªß∂À: HBaseAdmin
 		HBaseAdmin admin = new HBaseAdmin(conf);
 		
-		//¥¥Ω®“ª∏ˆ±Ìµƒ√Ë ˆ∑˚: ±Ì√˚
+		//
 		HTableDescriptor hd = new HTableDescriptor(TableName.valueOf("emp"));
 		
 		//¥¥Ω®¡–◊Â√Ë ˆ∑˚
